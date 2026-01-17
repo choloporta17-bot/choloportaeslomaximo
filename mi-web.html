@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solo mi imagen</title>
+    <title>Mi Imagen</title>
+    
+    <style>
+        body {
+            margin: 0; /* Quita los márgenes blancos del borde */
+            background-color: #f0f0f0; /* Color de fondo suave (opcional) */
+            text-align: center; /* Centra la imagen horizontalmente */
+        }
+
+        img {
+            max-width: 100%; /* LA CLAVE: La imagen nunca será más ancha que la pantalla */
+            height: auto;    /* Mantiene la proporción (no se deforma) */
+            display: block;  /* Ayuda al navegador a calcular el espacio */
+            margin: auto;    /* Centra la imagen si es pequeña */
+        }
+    </style>
 </head>
 <body>
 
-    <img src="foto.png" alt="Un paisaje hermoso">
+    <img src="foto.png" alt="Imagen adaptativa">
 
 </body>
 </html>
